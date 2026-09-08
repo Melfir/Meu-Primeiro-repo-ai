@@ -1,0 +1,54 @@
+# Git Cheat Sheet - Guia Rápido para Iniciantes
+
+O Git é como uma "máquina do tempo" para o seu código. Ele salva o histórico de tudo o que você faz, permite que você trabalhe em equipe sem sobrescrever o trabalho do colega e te ajuda a voltar atrás se algo der errado.
+
+Aqui estão os comandos que você mais vai usar no dia a dia:
+
+## 1. `git init`
+**O que faz:** Começa tudo.
+**Explicação:** Esse comando transforma uma pasta comum do seu computador em um repositório Git. É como dizer ao Git: "Ei, comece a vigiar os arquivos desta pasta a partir de agora". Você só usa isso uma vez por projeto novo.
+
+## 2. `git clone`
+**O que faz:** Copia um projeto que já existe.
+**Explicação:** Se o projeto já está na internet (no GitHub, por exemplo) e você quer baixar para o seu computador para começar a trabalhar, você usa o `clone` seguido do link do projeto. Ele faz uma cópia exata na sua máquina.
+
+## 3. `git status`
+**O que faz:** O seu melhor amigo para tirar dúvidas.
+**Explicação:** Ele te mostra como estão as coisas agora. Quais arquivos você modificou? Quais já estão prontos para serem salvos? Se você estiver perdido, digite `git status` para se encontrar.
+
+## 4. `git add .`
+**O que faz:** Prepara as mudanças para serem salvas.
+**Explicação:** Imagine que você está tirando uma foto do seu código. O `git add .` (com esse ponto no final) pega *todos* os arquivos que você alterou e coloca eles no "palco" (staging area), arrumando todo mundo para a foto.
+
+## 5. `git commit -m "sua mensagem"`
+**O que faz:** Salva a "foto" do código.
+**Explicação:** Agora sim, você tira a foto de tudo que estava no palco. O `-m` serve para você deixar uma mensagem curta e clara explicando o que você fez (ex: `git commit -m "Cria a tela de login"`). Isso salva a mudança no histórico do seu computador.
+
+## 6. `git push`
+**O que faz:** Envia seu trabalho para a nuvem.
+**Explicação:** Você já fez o commit e salvou tudo no seu computador, mas seus colegas ainda não podem ver. O `git push` "empurra" o seu código salvo para o servidor na internet (como o GitHub ou GitLab).
+
+## 7. `git pull`
+**O que faz:** Puxa as novidades da nuvem.
+**Explicação:** Se outro desenvolvedor fez alterações no código e enviou para o servidor, você precisa puxar essas novidades para a sua máquina antes de continuar trabalhando. O `git pull` atualiza o seu computador com o que está na internet.
+
+## 8. `git branch`
+**O que faz:** Cria universos paralelos (ramificações).
+**Explicação:** Para não bagunçar o código principal do projeto, nós criamos "branches" (galhos). Cada branch é um ambiente seguro onde você pode testar e criar coisas novas sem quebrar o que já está funcionando. O comando `git branch` lista em qual galho você está ou cria um novo.
+
+---
+
+## 📋 Tabela de Resumo
+
+| Comando | Para que serve de forma resumida? |
+|---|---|
+| `git init` | Inicializa um novo repositório local. |
+| `git clone [url]` | Baixa um repositório da internet para a sua máquina. |
+| `git status` | Mostra o estado atual dos seus arquivos (modificados, adicionados, etc). |
+| `git add .` | Adiciona todas as suas modificações na área de preparação. |
+| `git commit -m "..."` | Salva as modificações preparadas com uma mensagem explicativa. |
+| `git push` | Envia os seus commits (salvamentos) para o repositório remoto (nuvem). |
+| `git pull` | Baixa e aplica as últimas atualizações do repositório remoto na sua máquina. |
+| `git branch` | Lista todas as ramificações de código do projeto. |
+
+> **Dica do Sênior:** Na dúvida, sempre dê um `git status` antes de fazer qualquer outra coisa. Boa sorte no seu primeiro dia, você vai mandar bem!
